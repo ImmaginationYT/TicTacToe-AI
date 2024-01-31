@@ -202,10 +202,10 @@ def play(): #main function
     sign=0
     menu=Tk()
     menu.geometry("300x182")
-    menu.title("Boolean Fighters")
+    menu.title("TicTacToe")
     ac=partial(againstcomputer,menu)
     ap=partial(againstplayer,menu)
-    head=Label(menu,text="Welcome to Boolean Fighters!!!",bg="light green",fg="red",width=250,font="Times",bd=10)
+    head=Label(menu,text="Welcome to TicTacToe!!!",bg="light green",fg="red",width=250,font="Times",bd=10)
     b1=Button(menu,text="Single-Player (vs Computer)",command=ac,activeforeground="magenta",activebackground="yellow",bg="pink",fg="blue",width=250,font="summer",bd=5)
     b2=Button(menu,text="Multi-Player (vs Player)",command=ap,activeforeground="magenta",activebackground="yellow",bg="pink",fg="blue",width=250,font="summer",bd=5)
     b3=Button(menu,text="Exit",command=menu.quit,activeforeground="magenta",activebackground="yellow",bg="pink",fg="blue",width=250,font="summer",bd=5)
